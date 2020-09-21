@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>GIFOS PROJECT</title>
+
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="js/clases.js"></script>
+</head>
+
+<body>
+	<div class="adgepage"></div>
+	<header class="header">
+        <div class="header_container">
+            <div class="icon-logo">
+                <a href="index.html"></a>
+            </div>
+            <input type="checkbox" name="checkbox_menu" id="menu-btn" class="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <nav class="nav-bar">
+                <ul class="menu">
+                    <li id="dark-mode"><a href="#">MODO NOCTURNO</a></li>
+                    <hr>
+                    <li><a href="favorites.html">FAVORITOS</a></li>
+                    <hr>
+                    <li><a href="myGifos.html">MIS GIFOS</a></li>
+                    <hr>
+                    <div class="circle">
+                        <a href="creategif.html"><div class="creategifo"></div></a> 
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<main>
+
+        <div class="gifos-title">
+            <img src="img/icon-mis-gifos.svg" alt="icon my gifos" class="iconFavorites">
+            <h2>Mis GIFOS</h2>
+        </div>
+
+        <div class="no-gifos hide" id="no-gifos">
+            <img src="./img/icon-mis-gifos-sin-contenido.svg" alt="">
+            <h1>¡Anímate a crear tu primer GIFO!</h1>
+        </div>
+        <section class="my-gifos">
+            <section class="gifos-container">
+                <div>
+                    
+                    <div class="images-gifos" id="images-gifos">
+                        
+                    </div>
+                </div>
+             <button class="seemore hide">VER MAS</button>
+            </section>  
+        </section>
+
+		
+		<!-- FULL SCREEN -->
+
+        <div id="full-screen">
+            <div id="close-full" class="close-full"> 
+                
+            </div>
+            <div class="max-container-full">
+                <div class="events-full">
+                    <div id="fav-full" class="fav-full">
+
+                    </div>
+                    <div id="download-full" class="download-full">
+
+                    </div>
+                </div>
+                
+                <div id="info-full" class="info-full">
+                    <div id="user-full" class="user-full">
+
+                    </div>
+                    <div id="title-full" class="title-full">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- CARRUSEL -->
+        <section class="trending">
+            <div class="trend" id="trending-title">
+                <h2>Trending GIFOS</h2>
+            </div>
+            <p>Mira los últimos GIFOS de nuestra comunidad.</p>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="slider-arrow-left" id="prev-btn">
+                        
+                    </div>  
+                
+                    <div class="img-trending" id="img-trending">
+                    
+                    </div>
+                    <div class="slider-arrow-right" id="next-btn">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-container">
+                <h6>Compartir en:</h6>
+                <div class="social-media">
+                    <div class="fb-div">
+                        <a href="https://facebook.com"></a>
+                    </div>
+                    <div class="twitter-div">
+                        <a href="https://twitter.com"></a>   
+                    </div>
+                    <div class="insta-div">
+                        <a href="https://instagram.com"></a>    
+                    </div>   
+                </div>
+            </div>
+        
+        <h6>© GIFOS 2020 All Rights Reserved.</h6>
+        </div>
+        <div class="adgepage"></div>
+    </footer> 
+
+    <script src="js/mygifos.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

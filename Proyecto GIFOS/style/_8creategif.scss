@@ -1,0 +1,245 @@
+.creating-gif-container{
+    display: flex;
+    align-items: center;
+    margin-left: 156px;
+
+    .camera{
+        width: 123px;
+        height: 162px;
+        background: url('../img/camara.svg') no-repeat;
+    }
+
+    .camera-light{
+        width: 91px;
+        height: 151px;
+        background: url('../img/element-luz-camara.svg') no-repeat;
+        margin-top: 28px;
+        margin-right: 4px;
+        margin-left: 2px;
+    }
+
+    .creating-gif{
+        text-align: center;
+        width: 688px;
+        height: 390px;
+        border: solid 1px #572EE5;
+        display: flex;
+        
+
+        .create-gif-inner{
+            
+            width: 634px ;
+            height: 339px ;
+            display: flex;
+            margin: auto;
+            align-items: center;
+
+            .corner{
+                width: 27px;
+                height: 25px;
+                position: absolute;
+            }
+
+            .top-left{
+                border-left: 1px solid #50E3C2;
+                border-top: 1px solid #50E3C2;
+                top: 148px;
+                left: 403px;
+            }
+
+            .top-right{
+                border-right: 1px solid #50E3C2;
+                border-top: 1px solid #50E3C2;
+                top: 148px;
+                right: 403px;
+            }
+
+            .bottom-left{
+                border-left: 1px solid #50E3C2;
+                border-bottom: 1px solid #50E3C2;
+                bottom: 398px;
+                left: 403px;
+            }
+
+            .bottom-right{
+                border-right: 1px solid #50E3C2;
+                border-bottom: 1px solid #50E3C2;
+                bottom: 398px;
+                right: 403px;
+            }
+
+            .create-gif{
+                
+                width: 480px;
+                height: 320px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+               .create-gif-title{
+                
+                font-family: 'Montserrat', sans-serif;
+                font-size: 25px;
+                color: #572EE5;
+                text-align: center;
+                line-height: 35px;
+                font-weight: bold;
+                width: 550px;
+                height: 70px;
+
+                    span{
+                        color: #50E3C2;
+                    }
+
+               }
+
+               .create-gif-text{
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                color: #000000;
+                text-align: center;
+                line-height: 29px;
+                font-weight: 400;
+               }
+
+               img, video{
+                   width: 480px;
+                   height: 320px;
+               }
+
+               
+
+            }
+
+            .uploading, .upload{
+                background: #572EE5;
+                opacity: 0.6;
+                align-items: center;
+                width: 480px;
+                height: 320px;
+                position: absolute;
+                z-index: 1;
+                left: 480px;
+
+                img{
+                    display: inherit;
+                    margin: auto;
+                    margin-bottom: 10px;
+                    margin-top: 130px;
+                }
+                
+                span{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    
+                }
+
+                .container-actions{
+                    display: flex;
+                    gap: 10px;
+                    position: absolute;
+                    z-index: 1;
+                    top: 10px;
+                    right: 12px;
+
+                    .link{
+                        background: url('../img/icon-link-normal.svg') no-repeat #FFFFFF;
+                        background-position: center;
+
+                        &:hover{
+                            background: url('../img/icon-link-hover.svg') no-repeat;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        
+    }
+}
+
+.record-container{
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    height: 90px;
+
+    .steps-container{
+    display: flex;
+    gap: 26px;
+    width: 162px;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 19px;
+
+    .steps{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #572EE5;
+    border-radius: 27px;
+    text-align: center;
+    font-size: 18px;
+    color: #572EE5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 32px;
+    }
+    .selected{
+        background: #572EE5;
+        color: #ffffff;
+    }
+
+    
+}
+
+    .pelicula{
+        background: url('../img/pelicula.svg')no-repeat;
+        width: 142px;
+        height: 88px;
+        float: right;
+        position: relative;
+        top: -77px;
+    }
+
+    .timer{
+        font-family: 'Montserrat', 'sans-serif';
+        font-weight: bold;
+        float: right;
+        position: relative;
+        top: -44px;
+        right: 88px;
+        font-size: 15px;
+        color: #572EE5;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+
+        span{
+            width: 25px;
+            display: inline-block;
+        }
+
+        .repeat{
+            width: 160px;
+            cursor: pointer;
+            border-bottom: solid 1px #50E3C2;
+        }
+    }
+}
+
+
+
+.divider{
+    border: #572EE5 solid 3px;
+    border-radius: 10px;
+    width: 56%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+

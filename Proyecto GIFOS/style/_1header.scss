@@ -1,0 +1,258 @@
+.adgepage{
+    background-color: #572EE5;
+    height: 5px;
+    position:relative;
+    width: 100%;
+}
+
+.header{
+    &_container{
+        padding: 29px 22px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon-logo{
+            width: 49px;
+            height: 49px;
+            background: url('../img/logo-mobile.svg') no-repeat;
+            cursor: pointer;
+
+            a{
+                display:inline-block;
+                width: 49px;
+                height: 49px;
+                
+                img{
+                    padding-right: 11px;
+                    padding-left: 11px;
+                }
+            }
+        }
+
+        & > .menu-btn{
+            position: absolute;
+            right: 16px;
+            height: 18px;
+            width: 18px;
+            opacity: 0;
+            z-index: 10;
+            cursor: pointer;
+            &:checked{
+                ~ .nav-bar{
+                    height: 651px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .menu-icon{
+        cursor: pointer;
+        background: #572EE5;
+
+        .nav-icon{
+            //background: black ;
+            display: block;
+            height: 2px;
+            width: 18px;
+            position: relative;
+            transition: background .2s ease-out;
+
+            &::before{
+                background: #572EE5;
+                content: "";
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: all .3s ease-out;
+                top: 5px;
+            }
+
+            &::after{
+                background: #572EE5;
+                content: "";
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                bottom: 5px;
+            }
+        }
+    }
+
+    .nav-bar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(87,46,229,0.90);;
+        z-index: 20;
+        height: 0;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+        
+        .menu{
+            list-style: none;
+            padding: 17px 16px 24px;
+             li{
+                margin-bottom: 11px;
+                text-align: center;
+                
+
+                &:last-child{
+                    margin-bottom: 0;
+                    border-bottom: none;
+                }
+                a{
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    color: white;
+                    line-height: 30px;
+                    text-decoration: none;
+
+                    // &:hover{
+                    //     color: #00F3BB;
+                    //     text-decoration: line-through;
+                    // }
+
+                    // &:active{
+                    //     color: #8F060A24;
+                    // }
+                }
+            }
+
+            hr{
+                width: 41px;
+                margin-top: 0;
+                border: 1px solid #FFFFFF;
+            }
+        }
+    }
+}
+
+
+.creategifo{
+     display: none;
+}
+
+/* a partir de los 800px: muestre esto */ //
+@media (min-width:800px){
+    .header{
+        &_container{
+            max-width: 1440px;
+            padding: 22px 100px;
+            margin: 0 auto;
+
+            .icon-logo{
+                width: 65.1px;
+                height: 59.1px;
+                background: url('../img/logo-desktop.svg') no-repeat;
+                cursor: pointer;
+
+                a{
+                    display:inline-block;
+                    width: 60px;
+                    height: 59.1px;
+                    
+                    img{
+                        padding-right: 11px;
+                        padding-left: 11px;
+                    }
+                }
+            }
+
+            
+
+            & > .menu-btn{
+                display: none;
+                &:checked{
+                    ~ .nav-bar{
+                        height: 61px;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .menu-icon{
+                display: none;
+            }
+
+            .nav-bar{
+                position: initial;
+                opacity: 1;
+                height: initial;
+                background: transparent;
+                flex: 0.4;
+                
+                .menu{
+                    padding: 0;
+                    display: flex;
+                    flex: 0.3;
+                    justify-content: space-between ;
+                    li{
+                        margin-bottom: 0;
+                        a{
+                            font-size: 13px;
+                            color: #572EE5;
+                            letter-spacing: 0;
+                            margin-bottom: 0;
+
+                            &:hover{
+                                border-bottom: 2px solid #5ED7C6;
+                            }
+
+                            &:active{
+                                color: #9CAFC3;
+                                border-bottom: none;
+                            }
+                        }
+                    }
+
+                    hr{display: none;}
+                }
+
+                .circle{
+                    border-radius: 50%;
+                    border: solid 1px #572EE5; 
+                    width:54px;
+                    height:54px;
+                    display: inline-block;
+                    margin-top: -13px;
+                    margin-left: 50px;
+                    
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                
+                        .creategifo{
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+                            margin: 18px;
+                            background: url('../img/button-crear-gifo.svg') no-repeat;
+                            
+                        }   
+            }
+                .circle-active{
+                    margin-top: -13px;
+                    margin-left: 50px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                    .creategifo-active{
+                        display: block;
+                    }
+                }   
+        }
+     }
+    }
+    }

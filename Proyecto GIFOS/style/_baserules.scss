@@ -1,0 +1,392 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+hr{
+    opacity: 0.5;
+    border: 1px solid #9CAFC3;;
+    width: 157px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+
+div.descarga, div.no-favorito, div.full-screen, div.trash, div.link {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    opacity: 0.7;
+    
+    cursor: pointer;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    
+}
+
+div.trash{
+    background: url('../img/icon-trash-normal.svg') no-repeat  #ffffff;
+    background-position: center;
+
+    &:hover{
+        background: url('../img/icon-trash-hover.svg') no-repeat;
+        background-position: center;
+    }
+}
+
+div.descarga{
+    background: url('../img/icon-download.svg') no-repeat, #ffffff;
+    background-position: center;
+
+    &:hover{
+        background: url('../img/icon-download-hover.svg');
+        background-position: center;
+    }
+}
+
+div.no-favorito{
+    background: url('../img/icon-fav.svg') no-repeat, #ffffff;
+    background-position: center;
+
+    &:hover{
+        background: url('../img/icon-fav-hover.svg') no-repeat, #ffffff;
+        background-position: center;
+    }
+}
+div.favorito{
+    background: url('../img/icon-fav-active.svg') no-repeat, #ffffff;
+    background-position: center;
+}
+div.full-screen{
+    background: url('../img/icon-max.svg') no-repeat, #ffffff;
+    background-position: center;
+
+    &:hover{
+        background: url('../img/icon-max-hover.svg');
+        background-position: center;
+    }
+}
+div#full-screen{
+    background: white;
+    position: absolute;
+    z-index: 10; 
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+div.show-full-slider, .show-full, .show-full-fav{
+    background: white;
+    position: absolute;
+    z-index: 10;
+    top: unset;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    display: none;
+    display: block !important;
+    text-align: center;
+    
+    .close-full{
+        width: 15.2px;
+        height: 15.2px;
+        position: relative;
+        top: -350px;
+        left: 320px;
+        cursor: pointer;
+        background: url('../img/close.svg') no-repeat;
+    }
+
+    .img-full{
+        width: 318px;
+        height: 245px;
+        padding-top: 180px;
+    }
+
+    .max-container-full{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+
+        .events-full{
+            display: flex;
+            gap: 21px;
+
+            .fav-full, .download-full{
+            width: 36px;
+            height: 36px;
+            border: 1px solid #CED7E1;
+            border-radius: 6px;
+            cursor: pointer;
+            }
+
+            .fav-full{
+                background: url('../img/icon-fav.svg') no-repeat, #ffffff;
+                background-position: center;
+
+                &:hover{
+                    background: url('../img/icon-fav-hover.svg') no-repeat;
+                    background-position: center;
+                }
+            }
+
+            .favorito{
+                background: url('../img/icon-fav-active.svg') no-repeat, #ffffff;
+                background-position: center;
+            }
+
+            .download-full{
+                background: url('../img/icon-download.svg') no-repeat, #ffffff;
+                background-position: center;
+
+                &:hover{
+                    background: url('../img/icon-download-hover.svg') no-repeat;
+                    background-position: center;
+                }
+            }
+        }
+
+        .info-full{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            width: 193px;
+
+            .user-full, .title-full{
+                font-family: 'Roboto', sans-serif;
+                color: #000000;
+                text-align: left;
+            }
+
+            .user-full{
+                font-size: 15px;
+                height: 18px;
+                
+            }
+
+            .title-full{
+                font-size: 16px;
+                font-weight: bold;
+                height: 19px;
+                
+            }
+        }
+    }
+
+    
+}
+
+.show-flex{
+    display: flex;
+}
+
+.show-full{
+    display: block !important;
+    text-align: center;
+    height: 97%;
+    top: 693px;
+}
+
+.show-full-fav{
+    display: block !important;
+    text-align: center;
+    height: 80%;
+    top: 215px;
+}
+
+@media only screen and (min-width: 800px){
+    div.descarga, div.no-favorito, div.full-screen {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        opacity: 0.7;
+        
+        cursor: pointer;
+    
+        &:hover{
+            opacity: 1;
+        }
+    
+        
+    }
+    
+    div.descarga{
+        background: url('../img/icon-download.svg') no-repeat, #ffffff;
+        background-position: center;
+    
+        &:hover{
+            background: url('../img/icon-download-hover.svg');
+            background-position: center;
+        }
+    }
+    
+    div.no-favorito{
+        background: url('../img/icon-fav.svg') no-repeat, #ffffff;
+        background-position: center;
+    
+        &:hover{
+            background: url('../img/icon-fav-hover.svg') no-repeat, #ffffff;
+            background-position: center;
+        }
+    }
+    div.favorito{
+        background: url('../img/icon-fav-active.svg') no-repeat, #ffffff;
+        background-position: center;
+    }
+    div.full-screen{
+        background: url('../img/icon-max.svg') no-repeat, #ffffff;
+        background-position: center;
+    
+        &:hover{
+            background: url('../img/icon-max-hover.svg');
+            background-position: center;
+        }
+    }
+    div#full-screen{
+        background: white;
+        position: absolute;
+        z-index: 10; 
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+       
+    div.show-full-slider, .show-full, .show-full-fav{
+        background: white;
+        position: absolute;
+        z-index: 10;
+        top: unset;
+        left: 0;
+        height: 72%;
+        width: 60%;
+        display: none;
+        display: block !important;
+        text-align: center;
+        
+        .close-full{
+            width: 15.2px;
+            height: 15.2px;
+            position: relative;
+            top: -497px;
+            left: 1173px;
+            cursor: pointer;
+        }
+    
+        .img-full{
+            width: 800px;
+            height: 385px;
+            padding-top: 112px;
+        }
+    
+        .max-container-full{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+    
+            .events-full{
+                display: flex;
+                gap: 21px;
+    
+                .fav-full, .download-full{
+                width: 36px;
+                height: 36px;
+                border: 1px solid #CED7E1;
+                border-radius: 6px;
+                cursor: pointer;
+    
+    
+                }
+    
+                .fav-full{
+                    background: url('../img/icon-fav.svg') no-repeat, #ffffff;
+                    background-position: center;
+    
+                    &:hover{
+                        background: url('../img/icon-fav-hover.svg') no-repeat;
+                        background-position: center;
+                    }
+                }
+    
+                .favorito{
+                    background: url('../img/icon-fav-active.svg') no-repeat, #ffffff;
+                    background-position: center;
+                }
+    
+                .download-full{
+                    background: url('../img/icon-download.svg') no-repeat, #ffffff;
+                    background-position: center;
+    
+                    &:hover{
+                        background: url('../img/icon-download-hover.svg') no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+    
+            .info-full{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                width: 350px;
+    
+                .user-full, .title-full{
+                    font-family: 'Roboto', sans-serif;
+                    color: #000000;
+                    text-align: left;
+                }
+    
+                .user-full{
+                    font-size: 15px;
+                    height: 18px;
+                    
+                }
+    
+                .title-full{
+                    font-size: 16px;
+                    font-weight: bold;
+                    height: 19px;
+                    
+                }
+            }
+        }
+    
+        
+    }
+    
+    .show-flex{
+        display: flex;
+    }
+    
+    .show-full{
+        display: block !important;
+        text-align: center;
+        height: 110%;
+        top: 971px;
+    }
+
+    .show-full-fav{
+        display: block !important;
+        text-align: center;
+        height: 80%;
+        top: 215px;
+    }
+
+    div{
+
+        hr{
+            width: 338px;
+            margin-top: 55px;
+        }
+    }
+}

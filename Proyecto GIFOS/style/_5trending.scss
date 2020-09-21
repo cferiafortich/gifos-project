@@ -1,0 +1,343 @@
+.first-trending{
+    h2{
+        margin-top: 31px;
+        margin-bottom: 0;
+    }
+
+    div#popular-trending{
+        margin-top: 2px;
+        width: 225px;
+        height: 50px;
+        margin-left: 75px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color:  #572EE5;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.trending{
+    background: #F3F5F8;
+    width:100%;
+    padding-top: 46px;
+    
+    .trend{
+
+        h2{
+            font-weight: bold;
+            height:30px;
+            width:100%;
+            font-size: 25px;
+            color: #572EE5;
+            text-align: center;
+            line-height: 30px;
+            
+        }
+    }
+
+    p{
+        color: #000000;
+    }
+
+    .carousel{
+        display: flex;
+        align-items: center;
+        
+        .carousel-inner{
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+
+            .slider-arrow-right{
+                display: block;
+                background-image: url('../img/Button-Slider-right.svg');
+                width: 40px;
+                height: 40px;
+                z-index: 10;
+                cursor: pointer;
+
+                &:hover{
+                    background-image: url('../img/Button-Slider-right-hover.svg');
+                }
+            }
+
+            .slider-arrow-left{
+                display: block;
+                background-image: url('../img/Button-Slider-left.svg');
+                width: 40px;
+                height: 40px;
+                z-index: 10;
+                cursor: pointer;
+                margin-left: 0px;
+
+                &:hover{
+                    background-image: url('../img/Button-Slider-left-hover.svg');
+                }
+            }
+
+            .img-trending{
+                gap: 22px;
+                display: flex;
+                overflow: hidden;
+
+                .gif-container{
+                   height: 187px;
+                   display: flex;
+
+                    
+
+                    & > div{
+                         display: flex;
+                         position: absolute;
+                         z-index: 1;
+                         visibility: hidden;
+                         gap: 11px;
+                         margin-left: 230px;
+                         margin-top: 10px;
+                         display: none;
+                         
+                    }
+
+                   
+
+                    .info-container{
+                        margin-left: 10px;
+                        flex-direction: column;
+                        margin-top: 188px;
+                        gap: 6px;
+                        
+
+                        .div-user{
+                        width: 96px;
+                        height: 17px;
+                        margin-left: 13px;
+                        margin-top: unset;
+                        bottom: -326px;
+                        color: #ffffff;
+                        font-size: 15px;
+                        font-family: 'Roboto', sans-serif;
+                        text-align: unset;
+
+                            &:hover{
+                                visibility: visible;
+                            }
+                        }
+
+                        .div-title{
+                            width: 234px;
+                            height: 40px;
+                            margin-left: 13px;
+                            margin-top: unset;
+                            bottom: -383px;
+                            color: #ffffff;
+                            font-size: 15px;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: bold;
+                            text-align: unset;
+
+                            &:hover{
+                                visibility: visible;
+                            }
+                        }
+                    }
+
+                }
+
+                img{
+                    
+                    width: 243px;
+                    height: 187px;
+                    flex-shrink: 0;
+                }
+            }
+        
+
+            .img-trending{
+                display: flex;
+                margin: 32px 0px 82px;
+                
+                width: 79%;
+            
+            
+            }
+        
+        }
+    }
+    
+}
+
+@media only screen and (min-width:800px){
+
+    .first-trending{
+
+        div#popular-trending{
+            margin-top: 7px;
+            margin-bottom: 74px;
+            margin-left: 0;
+            width: unset;
+            height: unset;
+
+            span{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .trending{
+        
+        height: 100%;
+        background-color: #F3F5F8;
+        padding-bottom: 182px;
+
+        .trend{
+
+            h2{
+                font-size: 30px;
+            }
+        }
+
+        .carousel{
+            display: flex;
+            
+            
+
+            .carousel-inner{
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+                
+
+                .slider-arrow-right{
+                    display: block;
+                    background-image: url('../img/Button-Slider-right.svg');
+                    width: 40px;
+                    height: 40px;
+                    z-index: 10;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-image: url('../img/Button-Slider-right-hover.svg');
+                    }
+                }
+
+                .slider-arrow-left{
+                    display: block;
+                    background-image: url('../img/Button-Slider-left.svg');
+                    width: 40px;
+                    height: 40px;
+                    z-index: 10;
+                    cursor: pointer;
+                    margin-left: 95px;
+
+                    &:hover{
+                        background-image: url('../img/Button-Slider-left-hover.svg');
+                    }
+                }
+
+                .img-trending{
+                    gap: 29px;
+                    display: flex;
+                    margin: 33px 22px 82px;
+                    overflow: hidden;
+
+                    .gif-container{
+                       height: 275px;
+                       display: flex;
+    
+                        &:hover{
+                             background: #572EE5 100%;
+                             opacity: 0.6;
+                             &>div{
+                                  visibility: visible;
+                             }
+                             
+                        }
+    
+                        & > div{
+                             display: flex;
+                             position: absolute;
+                             z-index: 1;
+                             visibility: hidden;
+                             gap: 11px;
+                             margin-left: 230px;
+                             margin-top: 10px;
+
+                             
+                        }
+    
+                        img{
+                             
+                        
+                             &:hover{
+                                  background: #572EE5 100%;
+                                  opacity: 0.6;
+                                  
+                             }
+                        }
+
+                        .info-container{
+                            margin-left: 10px;
+                            flex-direction: column;
+                            margin-top: 188px;
+                            gap: 6px;
+                            
+
+                            .div-user{
+                            width: 96px;
+                            height: 17px;
+                            margin-left: 13px;
+                            margin-top: unset;
+                            bottom: -326px;
+                            color: #ffffff;
+                            font-size: 15px;
+                            font-family: 'Roboto', sans-serif;
+                            text-align: unset;
+
+                                &:hover{
+                                    visibility: visible;
+                                }
+                            }
+
+                            .div-title{
+                                width: 234px;
+                                height: 40px;
+                                margin-left: 13px;
+                                margin-top: unset;
+                                bottom: -383px;
+                                color: #ffffff;
+                                font-size: 15px;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: bold;
+                                text-align: unset;
+
+                                &:hover{
+                                    visibility: visible;
+                                }
+                            }
+                        }
+
+                        
+
+                        
+                   }
+
+                    img{
+                        
+                        height: 275px;
+                        width: 357px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+
+        
+        
+        p{
+           font-size: 18px;
+           color: #000000;
+        }
+    }
+
+}

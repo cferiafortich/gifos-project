@@ -1,0 +1,89 @@
+.no-favorites, .no-gifos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        margin-top: 20px;
+    }
+
+    h1{
+        font-size: 22px;
+        color: #50E3C2;
+        line-height: 33px;
+        
+        margin-bottom: 91px;
+    }
+}
+
+.favorites-title{
+    
+    .iconFavorites{
+        width: 28px;
+        height: 21px;
+        display: flex;
+        margin: auto;
+        
+    }
+    h2{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: #572EE5;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 7px;
+        margin-bottom: 46px;
+    }
+}
+
+
+.favorites, .my-gifos{
+
+    
+    .imagesFavorites{
+        margin: 46px 21px 78px 21px ;
+        display: grid;
+        grid-template-columns: 156px 156px;
+        grid-template-rows: repeat(6, 120px);
+        gap: 25px 21px;
+        
+        img{
+            width: 156px;
+            height: 120px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 800px){
+    .no-favorites, .no-gifos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+            img{
+                margin-top: 64px;
+            }
+    
+            h1{
+                font-size: 22px;
+                color: #50E3C2;
+                line-height: 33px;
+                width: 431px;
+                margin-bottom: 91px;
+            }
+    }
+
+
+    .favorites, .my-gifos{
+
+       
+
+        h2{
+            font-size: 25px;
+            margin-top: 8px;
+            margin-bottom: 36px;
+        }
+    }
+}

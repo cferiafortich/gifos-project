@@ -1,0 +1,316 @@
+.dark{
+    background: #37383C;
+
+    .adgepage{
+        background: #000000;
+    }
+
+    .header{
+
+
+        .header_container{
+
+            .nav-bar{
+                background: #000000;
+            }
+
+            .icon-logo{
+                background: url('../img/logo-mobile-modo-noct.svg') no-repeat;
+            }
+
+            .menu-icon{
+                background: white;
+
+                .nav-icon{
+
+
+                    &::before{
+                        background: white;
+                    }
+
+                    &::after{
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .search{
+
+        h1{
+            color: white;
+        }
+
+        .Searching{
+            background: #37383C;
+            border: 1px solid #FFFFFF;
+            border-radius: 27px;
+            border-radius: 27px;
+
+           input{
+               color: #9CAFC3;
+               background: #37383C;
+           }
+
+           .icon-search{
+               background: url('../img/icon-search-mod-noc.svg');
+           }
+
+           .suggestion-bar{
+               border: 1px solid #FFFFFF;
+
+               #auto-complete-list{
+                   background: #37383C;
+               }
+           }
+        }
+
+        .close-search{
+            background: url('../img/close-modo-noct.svg') no-repeat;
+        }
+    }
+
+    .suggestion-bar{
+        border: solid 1px white;
+        color: #9CAFC3;
+
+        #auto-complete-list{
+            background: #37383C;
+            list-style-image: url('../img/icon-search-mod-noc.svg');
+        }
+    }
+
+    #search-result{
+
+        #title-result{
+            color: #FFFFFF;
+        }
+
+        .seemore{
+            border: #FFFFFF 1px solid;
+            color: #FFFFFF;
+            background: #37383C;
+            
+            &:hover{
+                border: 1px solid #37383C;
+                color: #000000;
+                background: #FFFFFF;
+            }
+            
+        }
+    }
+
+    div.show-full-slider, .show-full, .show-full-fav{
+        
+        .max-container-full{
+
+            .info-full{
+
+                .user-full{
+                    color: #FFFFFF;
+                }
+
+                .title-full{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .first-trending{
+        
+        h2{
+            color: #FFFFFF;
+        }
+
+        div#popular-trending{
+            color: #FFFFFF;
+        }
+    }
+
+    .trending{
+        background: #222326;
+
+        .trend{
+            
+            h2{
+                color: #FFFFFF;
+            }
+        }
+
+        p{
+            color: #FFFFFF;
+        }
+    }
+
+    footer{
+
+        .footer-container{
+
+            .social-container{
+
+                h6{
+                    color: #FFFFFF;
+                }
+            }
+
+            h6{
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .show-full, #full-screen{
+        background: #000000;
+        color: #FFFFFF;
+
+        .close-full{
+            background: url('../img/close-modo-noct.svg') no-repeat;
+        }
+    }
+
+    .favorites-title{
+        
+        h2{
+            color: #FFFFFF;
+        }
+    }
+
+    .gifos-title{
+        
+        h2{
+            color: #FFFFFF;
+        }
+    }
+}
+
+@media (min-width:800px){
+    .dark{
+
+        .header{
+
+            .header_container{
+
+                .icon-logo{
+                    background: url('../img/logo-desktop-modo-noc.svg') no-repeat;
+                }
+
+                .nav-bar{
+                    background: #37383C;
+
+                    ul{
+
+                        li{
+
+                            a{
+                                color: #FFFFFF;
+                            }
+                        }
+
+                        .circle{
+                            border: solid 1px #FFFFFF;
+                            background: url('../img/CTA-crar-gifo-modo-noc.svg') no-repeat;
+
+                            .creategifo{
+                                background: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .search{
+
+            .close-search{
+                background: url('../img/close-modo-noct.svg') no-repeat;
+            }
+        }
+
+        .suggestion-bar{
+            border: solid 1px white;
+            color: #9CAFC3;
+
+            #auto-complete-list{
+                background: #37383C;
+                list-style-image: url('../img/icon-search-mod-noc.svg');
+            }
+        }
+
+        footer{
+
+            .footer-container{
+
+                .social-container{
+
+                    .social-media{
+
+                        .fb-div{
+
+                            &:hover{
+                                background: url('../img/icon_facebook_noc.svg') no-repeat;
+                            }
+                        }
+
+                        .twitter-div{
+
+                            &:hover{
+                                background: url('../img/icon_twitter_noc.svg') no-repeat;
+                            }
+                        }
+
+                        .insta-div{
+
+                            &:hover{
+                                background: url('../img/icon_instagram_noc.svg') no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .creating-gif-container{
+
+            .camera{
+                background: url('../img/camara-modo-noc.svg') no-repeat;
+            }
+
+            .creating-gif{
+                border: solid 1px #FFFFFF;
+
+                .create-gif-inner{
+
+                    .create-gif{
+
+                        .create-gif-title, .create-gif-text{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .record-container{
+
+            .steps-container{
+                .steps{
+                    color: #FFFFFF;
+                    border: 1px solid #FFFFFF;
+                }
+            }
+
+            .pelicula{
+                background: url('../img/pelicula-modo-noc.svg') no-repeat;
+            }
+        }
+
+        .seemore{
+            border: 1px solid #37383C;
+            color: #000000;
+        }
+    }
+}
+

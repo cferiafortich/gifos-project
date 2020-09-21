@@ -1,0 +1,38 @@
+h1,
+h2,
+p{
+    font-family: 'Montserrat', sans-serif;
+    color:  #572EE5;
+    text-align: center;
+}
+
+.seemore {
+    width: 127px;
+    height: 50px;
+    border: 1px  #572EE5 solid;
+    border-radius: 25px ;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #572EE5;
+    letter-spacing: 0;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 79px;
+    margin-top: 78px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #572EE5;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .seemore{
+        margin-bottom: 157px;
+    }
+}

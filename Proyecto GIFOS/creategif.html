@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tus GIFOS</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="js/clases.js"></script>
+</head>
+<body>
+    <div class="adgepage"></div>
+    <header class="header">
+        <div class="header_container">
+            <div class="icon-logo">
+                <a href="index.html"></a>
+            </div>
+            <input type="checkbox" name="checkbox_menu" id="menu-btn" class="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <nav class="nav-bar">
+                <ul class="menu">
+                    <li id="dark-mode"><a href="#">MODO NOCTURNO</a></li>
+                    <hr>
+                    <li><a href="favorites.html">FAVORITOS</a></li>
+                    <hr>
+                    <li><a href="myGifos.html">MIS GIFOS</a></li>
+                    <hr>
+                    <div class="circle-active">
+                        <a href="creategif.html"><img src="img/CTA-crear-gifo-active.svg" class="creategifo-active" alt="cruz"></a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="creating-gif-container">
+            <div class="camera">
+                
+            </div>
+            <div class="camera-light">
+                
+            </div>
+            
+            <div class="creating-gif">
+                <div class="create-gif-inner">
+                    <div class="corner top-left"></div>
+                    <div class="corner top-right"></div>
+                    <div class="corner bottom-left"></div>
+                    <div class="corner bottom-right"></div>
+                    <div class="create-gif" id="create-gif">
+                        <div class="create-gif-title">
+                            Aquí podrás crear tus propios <span>GIFOS</span>
+                        </div>
+                        <div class="create-gif-text">
+                            ¡Crea tu GIFO en sólo 3 pasos! (sólo necesitas una cámara para grabar un video)
+                        </div>
+                    </div>
+                    <div class="uploading hide" id="uploading">
+                        <img src="./img/loader.svg" alt="cargando">
+                        <span>Estamos subiendo tu GIFO</span>
+                    </div>
+                    <div class="upload hide" id="upload">
+                        <img src="./img/check.svg" alt="cargado">
+                        <span>GIFO subido con éxito</span>
+                        <div class="container-actions">
+                            <div class="descarga" id="descarga"></div>
+                            <div class="link" id="link"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="record-container">
+            <div class="steps-container">
+                <div class="steps" id="step1">1</div>
+                <div class="steps" id="step2">2</div>
+                <div class="steps" id="step3">3</div>
+                
+            </div>
+
+            <div class="pelicula">
+                
+                </div>
+            <div class="timer hide" id="timer">
+                
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <button class="seemore" id="btn-action">COMENZAR</button>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-container">
+                <h6>Compartir en:</h6>
+                <div class="social-media">
+                    <div class="fb-div">
+                        <a href="https://facebook.com"></a>
+                    </div>
+                    <div class="twitter-div">
+                        <a href="https://twitter.com"></a>   
+                    </div>
+                    <div class="insta-div">
+                        <a href="https://instagram.com"></a>    
+                    </div>   
+                </div>
+            </div>
+        
+        <h6>© GIFOS 2020 All Rights Reserved.</h6>
+        </div>
+        <div class="adgepage"></div>
+    </footer> 
+
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/creategif.js"></script>
+</body>
+</html>
